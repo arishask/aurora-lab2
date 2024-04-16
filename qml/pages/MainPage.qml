@@ -56,6 +56,7 @@ Page {
         ]
     }
 
+//                                               ПЕРВАЯ ЧАСТЬ
 //    Row {
 //        id: colorTools
 //        anchors {
@@ -134,7 +135,8 @@ Page {
 //       }
 //    }
 
-//    Rectangle {                                           //вторая часть
+//                                               ВТОРАЯ ЧАСТЬ
+//    Rectangle {
 //        id: myRect
 //        width: 250; height: 250
 //        color: "lightgreen"
@@ -194,7 +196,8 @@ Page {
 //        }
 //    }
 
-//    Rectangle {                                         //третья часть
+//                                               ТРЕТЬЯ ЧАСТЬ
+//    Rectangle {
 //        width: 100
 //        height: 100
 //        color: "lightgreen"
@@ -272,51 +275,53 @@ Page {
 //        }
 //    }
 
-    Item {                                      //четвертая часть
-    id: container
-    width: 500; height: 500
-    Rectangle {
-        id: myRect
-        width: 200; height: 200
-        color: "white"
-    }
-        states: State {
-            name: "reanchored"
-            AnchorChanges { target: myRect; anchors.right: container.right }
-        }
-        transitions: Transition {
-            // smoothly reanchor myRect and move into new position
-            AnchorAnimation { duration: 1000 }
-        }
-        Component.onCompleted: container.state = "reanchored"
-    }
-    Item {
-        width: 200; height: 100
-        Rectangle {
-            id: redRect
-            width: 250; height: 250
-            x:300
-            y:1000
-            color: "black"
-        }
-        Rectangle {
-            id: blueRect
-            x: redRect.width
-            width: 200; height: 200
-            color: "grey"
-            states: State {
-                name: "reparented"
-                ParentChange { target: blueRect; parent: redRect; x: 10; y: 1000 }
-            }
-            transitions: Transition {
-                ParentAnimation {
-                    NumberAnimation { properties: "x,y"; duration: 1000 }
-                }
-            }
-            MouseArea { anchors.fill: parent; onClicked: blueRect.state ="reparented" }
-        }
-    }
+//    Item {
+//    id: container
+//    width: 500; height: 500
+//    Rectangle {
+//        id: myRect
+//        width: 200; height: 200
+//        color: "white"
+//    }
+//        states: State {
+//            name: "reanchored"
+//            AnchorChanges { target: myRect; anchors.right: container.right }
+//        }
+//        transitions: Transition {
+//            // smoothly reanchor myRect and move into new position
+//            AnchorAnimation { duration: 1000 }
+//        }
+//        Component.onCompleted: container.state = "reanchored"
+//    }
+//    Item {
+//        width: 200; height: 100
+//        Rectangle {
+//            id: redRect
+//            width: 250; height: 250
+//            x:300
+//            y:1000
+//            color: "black"
+//        }
+//        Rectangle {
+//            id: blueRect
+//            x: redRect.width
+//            width: 200; height: 200
+//            color: "grey"
+//            states: State {
+//                name: "reparented"
+//                ParentChange { target: blueRect; parent: redRect; x: 10; y: 1000 }
+//            }
+//            transitions: Transition {
+//                ParentAnimation {
+//                    NumberAnimation { properties: "x,y"; duration: 1000 }
+//                }
+//            }
+//            MouseArea { anchors.fill: parent; onClicked: blueRect.state ="reparented" }
+//        }
+//    }
 
+
+//                                               ЧЕТВЕРТАЯ ЧАСТЬ
     Column {
         id: layout
         x:200
