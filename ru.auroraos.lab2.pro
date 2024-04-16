@@ -48,6 +48,11 @@ SOURCES += \
 HEADERS += \
 
 DISTFILES += \
+    qml/pages/Fragment1.qml \
+    qml/pages/Fragment2.qml \
+    qml/pages/Fragment3.qml \
+    qml/pages/Fragment4.qml \
+    qml/pages/Fragment5.qml \
     rpm/ru.auroraos.lab2.spec \
     AUTHORS.md \
     CODE_OF_CONDUCT.md \

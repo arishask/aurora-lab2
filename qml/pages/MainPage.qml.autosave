@@ -56,6 +56,7 @@ Page {
         ]
     }
 
+//                                               ПЕРВАЯ ЧАСТЬ
 //    Row {
 //        id: colorTools
 //        anchors {
@@ -134,7 +135,8 @@ Page {
 //       }
 //    }
 
-//    Rectangle {                                           //вторая часть
+//                                               ВТОРАЯ ЧАСТЬ
+//    Rectangle {                                           
 //        id: myRect
 //        width: 250; height: 250
 //        color: "lightgreen"
@@ -194,7 +196,8 @@ Page {
 //        }
 //    }
 
-//    Rectangle {                                         //третья часть
+//                                               ТРЕТЬЯ ЧАСТЬ
+//    Rectangle {                                         
 //        width: 100
 //        height: 100
 //        color: "lightgreen"
@@ -272,7 +275,8 @@ Page {
 //        }
 //    }
 
-    Item {                                      //четвертая часть
+//                                               ЧЕТВЕРТАЯ ЧАСТЬ
+    Item {                                      
     id: container
     width: 500; height: 500
     Rectangle {
